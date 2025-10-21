@@ -21,7 +21,6 @@
 
     <nav>
         <div class="container">
-            <!-- Questi link ora puntano a sezioni della stessa pagina per una navigazione più fluida -->
             <a href="#benvenuto">Home</a>
             <a href="#storia">La Villa</a>
             <a href="#collezioni">Collezioni</a>
@@ -53,14 +52,50 @@
             <section id="collezioni">
                 <h3>Le Collezioni: Testimonianze di un'Epoca</h3>
                 <p>
-                    Il percorso espositivo raccoglie un'eredità preziosa del periodo garibaldino e risorgimentale. Tra i pezzi esposti potrete ammirare:
+                    Il percorso espositivo raccoglie un'eredità preziosa del periodo garibaldino e risorgimentale. Esplora alcuni dei nostri pezzi più significativi:
                 </p>
-                <ul>
-                    <li><strong>Cimeli e Oggetti Personali:</strong> Divise, armi e oggetti appartenuti a Garibaldi e ai suoi compagni.</li>
-                    <li><strong>Documenti e Manoscritti:</strong> Lettere originali dall'epistolario di Garibaldi e documenti che narrano l'organizzazione dell'impresa.</li>
-                    <li><strong>Armi d'Epoca:</strong> Fucili, spade e altre armi che hanno accompagnato i Mille nella loro spedizione.</li>
-                    <li><strong>Materiale Storico:</strong> Una raccolta di documenti che si estende fino alla Prima Guerra Mondiale, testimoniando il continuo impegno per la patria.</li>
-                </ul>
+                
+                <!-- Inizio Slideshow -->
+                <div class="slideshow-container">
+
+                    <!-- Slide 1: Cimeli e Oggetti Personali -->
+                    <div class="slide fade">
+                        <img src="https://via.placeholder.com/800x400.png?text=Divisa+Garibaldina" alt="Divisa originale di un garibaldino">
+                        <div class="caption">Cimeli e Oggetti Personali: Divise, medaglie e oggetti appartenuti a Garibaldi e ai suoi compagni.</div>
+                    </div>
+
+                    <!-- Slide 2: Documenti e Manoscritti -->
+                    <div class="slide fade">
+                        <img src="https://via.placeholder.com/800x400.png?text=Lettera+di+Garibaldi" alt="Lettera manoscritta di Giuseppe Garibaldi">
+                        <div class="caption">Documenti e Manoscritti: Lettere originali e documenti che narrano l'organizzazione dell'impresa.</div>
+                    </div>
+
+                    <!-- Slide 3: Armi d'Epoca -->
+                    <div class="slide fade">
+                        <img src="https://via.placeholder.com/800x400.png?text=Fucili+d'Epoca" alt="Fucili e sciabole usati nella Spedizione dei Mille">
+                        <div class="caption">Armi d'Epoca: Fucili, spade e altre armi che hanno accompagnato i Mille nella loro spedizione.</div>
+                    </div>
+                    
+                    <!-- Slide 4: Materiale Storico -->
+                    <div class="slide fade">
+                        <img src="https://via.placeholder.com/800x400.png?text=Archivio+Storico" alt="Documenti e fotografie storiche del Risorgimento">
+                        <div class="caption">Materiale Storico: Una raccolta di documenti che si estende fino alla Prima Guerra Mondiale.</div>
+                    </div>
+
+                    <!-- Pulsanti Avanti/Indietro -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- I pallini/indicatori -->
+                <div class="dots-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+                <!-- Fine Slideshow -->
             </section>
 
             <section id="visita">
@@ -114,5 +149,6 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
