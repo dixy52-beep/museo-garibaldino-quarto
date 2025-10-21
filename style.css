@@ -374,6 +374,7 @@
         @media (max-width: 480px) {
             header {
                 padding: 2rem 0 2rem;
+                padding-top: 4rem;        
             }
                     /* Stile per nascondere il testo su schermi piccoli */
 
