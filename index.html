@@ -13,6 +13,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
+        /* CSS per il logo nell'header */
+        header {
+            position: relative; /* Necessario per posizionare gli elementi figli in modo assoluto */
+        }
+        .header-logo {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 70px; /* Altezza del logo */
+            z-index: 10;
+        }
+
         /* Simple styles for the language switcher */
         .language-switcher {
             position: absolute;
@@ -37,11 +50,29 @@
             text-decoration: underline;
             opacity: 1;
         }
+
+        /* Adattamenti per schermi piccoli */
+        @media (max-width: 768px) {
+            .header-logo {
+                height: 50px; /* Riduciamo il logo su mobile */
+                left: 15px;
+            }
+            .language-switcher {
+                right: 15px;
+            }
+             /* Aggiungiamo padding per non far sovrapporre il testo al logo e al selettore lingua */
+            .header-content h1, .header-content h2 {
+                padding: 0 55px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <!-- Language Switcher added here -->
+        <!-- Logo aggiunto a sinistra -->
+        <img src="images/logo-associazione.png" class="header-logo hide-on-mobile" alt="Logo dell'Associazione Nazionale Combattenti e Reduci">
+
+        <!-- Language Switcher -->
         <div class="language-switcher">
             <button id="lang-it">Italiano</button> |
             <button id="lang-en">English</button>
