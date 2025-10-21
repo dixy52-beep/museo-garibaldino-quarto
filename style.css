@@ -1,0 +1,73 @@
+/* Stile Generale */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: #b71c1c; /* Un rosso garibaldino */
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: #006400 3px solid; /* Un tocco di verde */
+}
+header h1 {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+}
+
+/* Navigazione */
+nav {
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+nav a:hover {
+    background: #b71c1c;
+}
+
+/* Contenuto Principale */
+main {
+    padding: 20px 0;
+}
+
+main section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+main h2, main h3 {
+    font-family: 'Merriweather', serif;
+    color: #b71c1c;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
