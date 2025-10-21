@@ -335,6 +335,8 @@
             color: var(--text-light);
         }
 
+
+
         footer {
             background: var(--dark-bg);
             color: white;
@@ -383,6 +385,11 @@
         @media (max-width: 480px) {
             header {
                 padding: 3rem 0 2rem;
+            }
+                    /* Stile per nascondere il testo su schermi piccoli */
+
+            .hide-on-mobile {
+                display: none;
             }
 
             main {
