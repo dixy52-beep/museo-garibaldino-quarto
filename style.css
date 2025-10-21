@@ -1,5 +1,5 @@
-/* style.css */
- * {
+
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -25,7 +25,6 @@
             overflow-x: hidden;
         }
 
-        /* Header */
         header {
             background: linear-gradient(135deg, var(--primary-red) 0%, #a01828 100%);
             color: white;
@@ -66,16 +65,9 @@
             font-size: clamp(1rem, 2vw, 1.25rem);
             opacity: 0.95;
             font-weight: 300;
-                    color: white;
+            color: white;
         }
 
-        header p {
-            font-size: clamp(1rem, 2vw, 1.25rem);
-            opacity: 0.95;
-            font-weight: 300;
-        }
-
-        /* Navigation */
         nav {
             background: white;
             box-shadow: var(--shadow);
@@ -125,7 +117,6 @@
             width: 80%;
         }
 
-        /* Main Content */
         main {
             max-width: 1200px;
             margin: 0 auto;
@@ -178,7 +169,6 @@
             box-shadow: var(--shadow-lg);
         }
 
-        /* Slideshow */
         .slideshow-container {
             max-width: 900px;
             position: relative;
@@ -279,7 +269,6 @@
             background-color: var(--primary-green);
         }
 
-        /* Info Grid */
         .info-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -346,7 +335,6 @@
             color: var(--text-light);
         }
 
-        /* Footer */
         footer {
             background: var(--dark-bg);
             color: white;
@@ -360,7 +348,6 @@
             font-size: 0.95rem;
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
             section {
                 padding: 2rem 1.5rem;
