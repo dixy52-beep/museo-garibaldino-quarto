@@ -41,7 +41,7 @@
             right: 0;
             bottom: 0;
             background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M0,0 L1200,0 L1200,100 C900,120 600,80 0,100 Z" fill="rgba(255,255,255,0.05)"/></svg>') no-repeat bottom;
-            background-size: cover;
+            background-size: 100% auto; /* Si adatta alla larghezza, altezza automatica */
         }
 
         .header-content {
