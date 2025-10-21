@@ -341,8 +341,8 @@
             background: var(--dark-bg);
             color: white;
             text-align: center;
-            padding: 2.5rem 2rem;
-            margin-top: 4rem;
+            padding: 2rem 2rem;
+            margin-top: 1rem;
         }
 
         footer p {
