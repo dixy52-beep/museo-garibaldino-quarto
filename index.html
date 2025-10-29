@@ -75,7 +75,7 @@
 
         <!-- Language Switcher -->
         <div class="language-switcher">
-            <button id="lang-it">Italiano</button> |
+            <button id="lang-it" class="active">Italiano</button> |
             <button id="lang-en">English</button>
         </div>
         <div class="header-content">
@@ -362,15 +362,15 @@
 
         // Set the initial language when the page loads
         document.addEventListener('DOMContentLoaded', () => {
-            // 1. Check for a saved language in localStorage
             const savedLang = localStorage.getItem('preferredLanguage');
-            // 2. Check the browser's language setting
-            const browserLang = navigator.language.split('-')[0]; // "en-US" -> "en"
-            
-            // Prioritize saved language, then browser language, then default to 'it'
-            const initialLang = savedLang || (browserLang === 'en' ? 'en' : 'it');
-            
-            setLanguage(initialLang);
+            const browserLang = navigator.language.split('-')[0];
+        
+            // Cambia la lingua in inglese SOLO se è stata salvata la preferenza 'en'
+            // o se il browser dell'utente è impostato su 'en' e non c'è una preferenza salvata.
+            // Altrimenti, non fare nulla e lascia l'italiano di default.
+            if (savedLang === 'en' || (!savedLang && browserLang === 'en')) {
+                setLanguage('en');
+            }
         });
 
     </script>
