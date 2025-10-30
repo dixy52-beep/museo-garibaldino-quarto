@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the Garibaldi Museum of Genoa, located in the historic Villa Spinola in Quarto, headquarters of the Expedition of the Thousand. Hours, tickets, collections, and history.">
+    <title>Garibaldi Museum of Genoa - The Heart of the Risorgimento in Quarto</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* CSS per il logo nell'header */
+        header {
+            position: relative;
+        }
+        .header-logo {
+            position: absolute;
+            left: 20px;
+            top: 30px;
+            transform: translateY(-50%);
+            height: 50px;
+            z-index: 10;
+        }
+
+        /* Stili per il selettore della lingua (ora con link) */
+        .language-switcher {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            color: white;
+            z-index: 10;
+        }
+        .language-switcher a, .language-switcher span {
+            color: white;
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            text-decoration: none;
+            padding: 5px;
+            opacity: 0.7;
+        }
+        .language-switcher a {
+            cursor: pointer;
+        }
+        .language-switcher .active {
+            font-weight: bold;
+            text-decoration: underline;
+            opacity: 1;
+        }
+
+        /* Adattamenti per schermi piccoli */
+        @media (max-width: 768px) {
+            .header-logo {
+                height: 50px;
+                left: 15px;
+            }
+            .language-switcher {
+                right: 15px;
+            }
+            .header-content h1, .header-content h2 {
+                padding: 0 55px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../images/logo-associazione.png" class="header-logo" alt="Logo of the National Association of Combatants and Veterans">
+
+        <!-- Language Switcher con link statici -->
+        <div class="language-switcher">
+            <a href="../">Italiano</a> |
+            <span class="active">English</span>
+        </div>
+        <div class="header-content">
+            <h1><span>Garibaldi Museum</span><span class="hide-on-mobile"> of Genoa</span></h1>
+            <h2>Visit Villa Spinola: The Birthplace of Italian Unification</h2>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#benvenuto" class="hide-on-mobile">Home</a>
+            <a href="#storia">The Villa</a>
+            <a href="#collezioni">Collections</a>
+            <a href="#visita">Visit</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="benvenuto">
+            <h2>Welcome to the Beating Heart of the Risorgimento</h2>
+            <img class="hero-image" src="../images/museo-interno.webp" alt="Interior room of the Garibaldi Museum with relics and frescoes">
+            <p>
+                The Garibaldi Museum of Genoa, located in the Quarto district, inside the magnificent <strong>Villa Spinola</strong> (today Villa Garibaldi), was the actual headquarters where Giuseppe Garibaldi, together with his men, planned the crucial phases of the Expedition of the Thousand. Here, the Hero of Two Worlds spent the night before the historic departure.
+            </p>
+        </section>
+
+        <section id="storia">
+            <h3>An Iconic Place: Villa Spinola</h3>
+            <p>
+                The 17th-century villa, owned by friend and comrade-in-arms <strong>Candido Augusto Vecchi</strong>, was made fully available to Garibaldi. Its rooms, with splendid frescoed ceilings, became the operational center of the expedition. Today, the museum occupies two of these rooms, preserving the atmosphere of those feverish days intact. The building is managed by the National Association of Combatants and Veterans, which preserves its historical memory.
+            </p>
+        </section>
+
+        <section id="collezioni">
+            <h3>The Collections: Testimonies of an Era</h3>
+            <p>
+                The exhibition path gathers a precious legacy from the Garibaldian and Risorgimento period. Explore some of our most significant pieces:
+            </p>
+            
+            <div class="slideshow-container">
+                <div class="slide">
+                    <img src="../images/slide1.jpg" alt="Original uniform of a Garibaldian soldier">
+                    <div class="caption">Relics and Personal Items: Uniforms, medals, and objects that belonged to Garibaldi and his companions</div>
+                </div>
+                <div class="slide">
+                    <img src="../images/slide2.jpg" alt="Handwritten letter by Giuseppe Garibaldi">
+                    <div class="caption">Documents and Manuscripts: Original letters and documents narrating the organization of the enterprise</div>
+                </div>
+                <div class="slide">
+                    <img src="../images/slide3.jpg" alt="Rifles and sabers used in the Expedition of the Thousand">
+                    <div class="caption">Period Weapons: Rifles, swords, and other weapons that accompanied the Thousand on their expedition</div>
+                </div>
+                <div class="slide">
+                    <img src="../images/slide4.jpg" alt="Historical documents and photographs of the Risorgimento">
+                    <div class="caption">Historical Material: A collection of documents extending up to the First World War</div>
+                </div>
+                <button class="prev" onclick="plusSlides(-1)">❮</button>
+                <button class="next" onclick="plusSlides(1)">❯</button>
+            </div>
+
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </section>
+
+        <section id="visita">
+            <h2>Plan Your Visit</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h4>Address</h4>
+                    <p>
+                        Via L. Sartorio, 1<br>
+                        16148 Genoa (Quarto dei Mille)<br>
+                        <a href="https://maps.app.goo.gl/PdwwC1AnBFnhnwYd7" target="_blank">Open in Google Maps</a>
+                    </p>
+                </div>
+                <div class="info-card">
+                    <h4>Opening Hours</h4>
+                    <p>
+                        <strong>Monday - Thursday:</strong> 12:00 PM - 5:00 PM<br>
+                        <strong>Friday - Sunday:</strong> Closed<br>
+                        <small>Other days and times by appointment.</small>
+                    </p>
+                </div>
+                <div class="info-card">
+                    <h4>Tickets</h4>
+                    <p>
+                        <strong>Free visit</strong><br>
+                        <small>A contribution for the museum's maintenance is appreciated.</small>
+                    </p>
+                </div>
+                <div class="info-card">
+                    <h4>Contacts</h4>
+                    <p>
+                        <strong>Mobile:</strong> <a href="tel:+393494960570"> M. Teresa Carrara +39 349 4960 570</a><br>
+                        <strong>Email:</strong> <a href="mailto:mteresa.carrar@fastwebnet.it"> mteresa.carrara@fastwebnet.it</a><br>
+                        <span>For large groups, a phone call in advance is appreciated.</span>
+                    </p>
+                </div>
+                 <div class="info-card">
+                    <h4>Additional Services</h4>
+                    <p>
+                        Inside the Villa, there is a refreshment point with a pleasant outdoor area, managed by the association. Events are often organized; for information, consult the Facebook group.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Davide Brunori. All rights reserved. Created in collaboration with the Garibaldi Museum of Genoa.</p>
+    </footer>
+
+    <script>
+        // Slideshow script
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].classList.remove("active");
+            }
+            
+            slides[slideIndex - 1].classList.add("active");
+            dots[slideIndex - 1].classList.add("active");
+        }
+
+        setInterval(() => {
+            plusSlides(1);
+        }, 10000);
+    </script>
+</body>
+</html>
