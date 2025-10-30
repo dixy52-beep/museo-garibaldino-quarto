@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<!-- The lang attribute will be updated by JavaScript -->
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- The description will be updated by JavaScript -->
-    <meta name="description" content="Scopri il Museo Garibaldino di Genova, situato nella storica Villa Spinola a Quarto, quartier generale della Spedizione dei Mille. Orari, biglietti, collezioni e storia." data-translate-key="metaDescription">
-    <!-- The title will be updated by JavaScript -->
-    <title data-translate-key="pageTitle">Museo Garibaldino di Genova - Il Cuore del Risorgimento a Quarto</title>
+    <meta name="description" content="Scopri il Museo Garibaldino di Genova, situato nella storica Villa Spinola a Quarto, quartier generale della Spedizione dei Mille. Orari, biglietti, collezioni e storia.">
+    <title>Museo Garibaldino di Genova - Il Cuore del Risorgimento a Quarto</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,18 +13,18 @@
     <style>
         /* CSS per il logo nell'header */
         header {
-            position: relative; /* Necessario per posizionare gli elementi figli in modo assoluto */
+            position: relative;
         }
         .header-logo {
             position: absolute;
             left: 20px;
             top: 30px;
             transform: translateY(-50%);
-            height: 50px; /* Altezza del logo */
+            height: 50px;
             z-index: 10;
         }
 
-        /* Simple styles for the language switcher */
+        /* Stili per il selettore della lingua (ora con link) */
         .language-switcher {
             position: absolute;
             top: 15px;
@@ -35,18 +32,18 @@
             color: white;
             z-index: 10;
         }
-        .language-switcher button {
-            background: none;
-            border: none;
+        .language-switcher a, .language-switcher span {
             color: white;
-            cursor: pointer;
             font-size: 1rem;
             font-family: 'Inter', sans-serif;
             text-decoration: none;
             padding: 5px;
             opacity: 0.7;
         }
-        .language-switcher button.active {
+        .language-switcher a {
+            cursor: pointer;
+        }
+        .language-switcher .active {
             font-weight: bold;
             text-decoration: underline;
             opacity: 1;
@@ -55,13 +52,12 @@
         /* Adattamenti per schermi piccoli */
         @media (max-width: 768px) {
             .header-logo {
-                height: 50px; /* Riduciamo il logo su mobile */
+                height: 50px;
                 left: 15px;
             }
             .language-switcher {
                 right: 15px;
             }
-             /* Aggiungiamo padding per non far sovrapporre il testo al logo e al selettore lingua */
             .header-content h1, .header-content h2 {
                 padding: 0 55px;
             }
@@ -70,72 +66,67 @@
 </head>
 <body>
     <header>
-        <!-- Logo aggiunto a sinistra -->
         <img src="images/logo-associazione.png" class="header-logo" alt="Logo dell'Associazione Nazionale Combattenti e Reduci">
 
-        <!-- Language Switcher -->
+        <!-- Language Switcher con link statici -->
         <div class="language-switcher">
-            <button id="lang-it" class="active">Italiano</button> |
-            <button id="lang-en">English</button>
+            <span class="active">Italiano</span> |
+            <a href="en/">English</a>
         </div>
         <div class="header-content">
-            <h1><span data-translate-key="headerTitle">Museo Garibaldino</span><span class="hide-on-mobile" data-translate-key="headerSubtitle"> di Genova</span></h1>
-            <h2 data-translate-key="headerDescription">Nella storica Villa Spinola, dove fu pianificata la Spedizione dei Mille</h2>
+            <h1><span>Museo Garibaldino</span><span class="hide-on-mobile"> di Genova</span></h1>
+            <h2>Nella storica Villa Spinola, dove fu pianificata la Spedizione dei Mille</h2>
         </div>
     </header>
 
     <nav>
         <div class="nav-container">
-            <a href="#benvenuto" class="hide-on-mobile" data-translate-key="navHome">Home</a>
-            <a href="#storia" data-translate-key="navVilla">La Villa</a>
-            <a href="#collezioni" data-translate-key="navCollections">Collezioni</a>
-            <a href="#visita" data-translate-key="navVisit">Visita</a>
+            <a href="#benvenuto" class="hide-on-mobile">Home</a>
+            <a href="#storia">La Villa</a>
+            <a href="#collezioni">Collezioni</a>
+            <a href="#visita">Visita</a>
         </div>
     </nav>
 
     <main>
         <section id="benvenuto">
-            <h2 data-translate-key="welcomeTitle">Benvenuti nel Cuore Pulsante del Risorgimento</h2>
-            <img class="hero-image" src="images/museo-interno.webp" alt="Sala interna del Museo Garibaldino con cimeli e affreschi" data-translate-key="welcomeImageAlt">
-            <p data-translate-key="welcomeParagraph">
+            <h2>Benvenuti nel Cuore Pulsante del Risorgimento</h2>
+            <img class="hero-image" src="images/museo-interno.webp" alt="Sala interna del Museo Garibaldino con cimeli e affreschi">
+            <p>
                 Il Museo Garibaldino di Genova, situato nel quartiere di Quarto, all'interno della magnifica <strong>Villa Spinola</strong> (oggi Villa Garibaldi), fu il vero e proprio quartier generale dove Giuseppe Garibaldi, insieme ai suoi uomini, progettò le fasi cruciali della Spedizione dei Mille. Qui, l'Eroe dei Due Mondi trascorse la notte prima della storica partenza.
             </p>
         </section>
 
         <section id="storia">
-            <h3 data-translate-key="villaTitle">Un Luogo Iconico: Villa Spinola</h3>
-            <p data-translate-key="villaParagraph">
+            <h3>Un Luogo Iconico: Villa Spinola</h3>
+            <p>
                 La villa del XVII secolo, di proprietà dell'amico e compagno d'armi <strong>Candido Augusto Vecchi</strong>, fu messa a completa disposizione di Garibaldi. Le sue sale, con splendidi soffitti affrescati, divennero il centro operativo della spedizione. Oggi, il museo occupa due di queste sale, conservando intatta l'atmosfera di quei giorni febbrili. L'edificio è gestito dall'Associazione Nazionale Combattenti e Reduci, che ne preserva la memoria storica.
             </p>
         </section>
 
         <section id="collezioni">
-            <h3 data-translate-key="collectionsTitle">Le Collezioni: Testimonianze di un'Epoca</h3>
-            <p data-translate-key="collectionsParagraph">
+            <h3>Le Collezioni: Testimonianze di un'Epoca</h3>
+            <p>
                 Il percorso espositivo raccoglie un'eredità preziosa del periodo garibaldino e risorgimentale. Esplora alcuni dei nostri pezzi più significativi:
             </p>
             
             <div class="slideshow-container">
                 <div class="slide">
-                    <img src="images/slide1.jpg" alt="Divisa originale di un garibaldino" data-translate-key="slide1Alt">
-                    <div class="caption" data-translate-key="slide1Caption">Cimeli e Oggetti Personali: Divise, medaglie e oggetti appartenuti a Garibaldi e ai suoi compagni</div>
+                    <img src="images/slide1.jpg" alt="Divisa originale di un garibaldino">
+                    <div class="caption">Cimeli e Oggetti Personali: Divise, medaglie e oggetti appartenuti a Garibaldi e ai suoi compagni</div>
                 </div>
-
                 <div class="slide">
-                    <img src="images/slide2.jpg" alt="Lettera manoscritta di Giuseppe Garibaldi" data-translate-key="slide2Alt">
-                    <div class="caption" data-translate-key="slide2Caption">Documenti e Manoscritti: Lettere originali e documenti che narrano l'organizzazione dell'impresa</div>
+                    <img src="images/slide2.jpg" alt="Lettera manoscritta di Giuseppe Garibaldi">
+                    <div class="caption">Documenti e Manoscritti: Lettere originali e documenti che narrano l'organizzazione dell'impresa</div>
                 </div>
-
                 <div class="slide">
-                    <img src="images/slide3.jpg" alt="Fucili e sciabole usati nella Spedizione dei Mille" data-translate-key="slide3Alt">
-                    <div class="caption" data-translate-key="slide3Caption">Armi d'Epoca: Fucili, spade e altre armi che hanno accompagnato i Mille nella loro spedizione</div>
+                    <img src="images/slide3.jpg" alt="Fucili e sciabole usati nella Spedizione dei Mille">
+                    <div class="caption">Armi d'Epoca: Fucili, spade e altre armi che hanno accompagnato i Mille nella loro spedizione</div>
                 </div>
-                
                 <div class="slide">
-                    <img src="images/slide4.jpg" alt="Documenti e fotografie storiche del Risorgimento" data-translate-key="slide4Alt">
-                    <div class="caption" data-translate-key="slide4Caption">Materiale Storico: Una raccolta di documenti che si estende fino alla Prima Guerra Mondiale</div>
+                    <img src="images/slide4.jpg" alt="Documenti e fotografie storiche del Risorgimento">
+                    <div class="caption">Materiale Storico: Una raccolta di documenti che si estende fino alla Prima Guerra Mondiale</div>
                 </div>
-
                 <button class="prev" onclick="plusSlides(-1)">❮</button>
                 <button class="next" onclick="plusSlides(1)">❯</button>
             </div>
@@ -149,43 +140,43 @@
         </section>
 
         <section id="visita">
-            <h2 data-translate-key="visitTitle">Organizza la Tua Visita</h2>
+            <h2>Organizza la Tua Visita</h2>
             <div class="info-grid">
                 <div class="info-card">
-                    <h4 data-translate-key="addressTitle">Indirizzo</h4>
+                    <h4>Indirizzo</h4>
                     <p>
                         Via L. Sartorio, 1<br>
                         16148 Genova (Quarto dei Mille)<br>
-                        <a href="https://maps.app.goo.gl/PdwwC1AnBFnhnwYd7" target="_blank" data-translate-key="addressLink">Apri su Google Maps</a>
+                        <a href="https://maps.app.goo.gl/PdwwC1AnBFnhnwYd7" target="_blank">Apri su Google Maps</a>
                     </p>
                 </div>
                 <div class="info-card">
-                    <h4 data-translate-key="hoursTitle">Orari di Apertura</h4>
+                    <h4>Orari di Apertura</h4>
                     <p>
-                        <strong data-translate-key="hoursDays">Lunedì - Giovedì:</strong> 12:00 - 17:00<br>
-                        <strong data-translate-key="hoursClosed">Venerdì - Domenica:</strong> Chiuso<br>
-                        <small data-translate-key="hoursNote">Per tutti gli altri giorni e orari su prenotazione.</small>
+                        <strong>Lunedì - Giovedì:</strong> 12:00 - 17:00<br>
+                        <strong>Venerdì - Domenica:</strong> Chiuso<br>
+                        <small>Per tutti gli altri giorni e orari su prenotazione.</small>
                     </p>
                 </div>
                 <div class="info-card">
-                    <h4 data-translate-key="ticketsTitle">Biglietti</h4>
+                    <h4>Biglietti</h4>
                     <p>
-                        <strong data-translate-key="ticketsFull">Visita gratuita</strong><br>
-                        <small data-translate-key="ticketsNote">E' gradito un contributo per la manutenzione del museo.</small>
+                        <strong>Visita gratuita</strong><br>
+                        <small>E' gradito un contributo per la manutenzione del museo.</small>
                     </p>
                 </div>
                 <div class="info-card">
-                    <h4 data-translate-key="contactsTitle">Contatti</h4>
+                    <h4>Contatti</h4>
                     <p>
-                        <strong data-translate-key="contactsPhone">Cellulare:</strong> <a href="tel:+393494960570"> M. Teresa Carrara +39 349 4960 570</a><br>
-                        <strong data-translate-key="contactsEmail">Email:</strong> <a href="mailto:mteresa.carrar@fastwebnet.it"> mteresa.carrara@fastwebnet.it</a><br>
-                        <span data-translate-key="contactsNote">Per gruppi numerosi è gradito il preavviso telefonico</span>
+                        <strong>Cellulare:</strong> <a href="tel:+393494960570"> M. Teresa Carrara +39 349 4960 570</a><br>
+                        <strong>Email:</strong> <a href="mailto:mteresa.carrar@fastwebnet.it"> mteresa.carrara@fastwebnet.it</a><br>
+                        <span>Per gruppi numerosi è gradito il preavviso telefonico</span>
                     </p>
                 </div>
-                <div class="info-card">
-                    <h4 data-translate-key="servicesTitle">Servizi Aggiuntivi</h4>
-                    <p data-translate-key="servicesParagraph">
-                        All'interno della Villa è presente un punto di ristoro con un piacevole dehors, gestito dall'associazione
+                 <div class="info-card">
+                    <h4>Servizi Aggiuntivi</h4>
+                    <p>
+                        All'interno della Villa è presente un punto di ristoro con un piacevole dehors, gestito dall'associazione. Vengono spesso organizzati eventi, per informazioni consultare il gruppo facebook.
                     </p>
                 </div>
             </div>
@@ -193,11 +184,11 @@
     </main>
 
     <footer>
-        <p data-translate-key="footerText">&copy; 2025 Davide Brunori. Tutti i diritti riservati. Realizzato in collaborazione al Museo Garibaldino di Genova.</p>
+        <p>&copy; 2025 Davide Brunori. Tutti i diritti riservati. Realizzato in collaborazione al Museo Garibaldino di Genova.</p>
     </footer>
 
     <script>
-        // Slideshow script (unchanged)
+        // Slideshow script
         let slideIndex = 1;
         showSlides(slideIndex);
 
@@ -231,148 +222,6 @@
         setInterval(() => {
             plusSlides(1);
         }, 10000);
-        
-        // --- Language Switcher Script ---
-
-        const translations = {
-            // English translations
-            en: {
-                metaDescription: "Discover the Garibaldi Museum of Genoa, located in the historic Villa Spinola in Quarto, headquarters of the Expedition of the Thousand. Hours, tickets, collections, and history.",
-                pageTitle: "Garibaldi Museum of Genoa - The Heart of the Risorgimento in Quarto",
-                headerTitle: "Garibaldi Museum",
-                headerSubtitle: " of Genoa",
-                headerDescription: "Visit Villa Spinola: The Birthplace of Italian Unification",
-                navHome: "Home",
-                navVilla: "The Villa",
-                navCollections: "Collections",
-                navVisit: "Visit",
-                welcomeTitle: "Welcome to the Beating Heart of the Risorgimento",
-                welcomeImageAlt: "Interior room of the Garibaldi Museum with relics and frescoes",
-                welcomeParagraph: "The Garibaldi Museum of Genoa, located in the Quarto district, inside the magnificent <strong>Villa Spinola</strong> (today Villa Garibaldi), was the actual headquarters where Giuseppe Garibaldi, together with his men, planned the crucial phases of the Expedition of the Thousand. Here, the Hero of Two Worlds spent the night before the historic departure.",
-                villaTitle: "An Iconic Place: Villa Spinola",
-                villaParagraph: "The 17th-century villa, owned by friend and comrade-in-arms <strong>Candido Augusto Vecchi</strong>, was made fully available to Garibaldi. Its rooms, with splendid frescoed ceilings, became the operational center of the expedition. Today, the museum occupies two of these rooms, preserving the atmosphere of those feverish days intact. The building is managed by the National Association of Combatants and Veterans, which preserves its historical memory.",
-                collectionsTitle: "The Collections: Testimonies of an Era",
-                collectionsParagraph: "The exhibition path gathers a precious legacy from the Garibaldian and Risorgimento period. Explore some of our most significant pieces:",
-                slide1Alt: "Original uniform of a Garibaldian soldier",
-                slide1Caption: "Relics and Personal Items: Uniforms, medals, and objects that belonged to Garibaldi and his companions",
-                slide2Alt: "Handwritten letter by Giuseppe Garibaldi",
-                slide2Caption: "Documents and Manuscripts: Original letters and documents narrating the organization of the enterprise",
-                slide3Alt: "Rifles and sabers used in the Expedition of the Thousand",
-                slide3Caption: "Period Weapons: Rifles, swords, and other weapons that accompanied the Thousand on their expedition",
-                slide4Alt: "Historical documents and photographs of the Risorgimento",
-                slide4Caption: "Historical Material: A collection of documents extending up to the First World War",
-                visitTitle: "Plan Your Visit",
-                addressTitle: "Address",
-                addressLink: "Open in Google Maps",
-                hoursTitle: "Opening Hours",
-                hoursDays: "Monday - Thursday:",
-                hoursClosed: "Friday - Sunday:",
-                hoursNote: "Other days and times by appointment.",
-                ticketsTitle: "Tickets",
-                ticketsFull: "Free visit",
-                ticketsNote: "A contribution for the museum's maintenance is appreciated.",
-                contactsTitle: "Contacts",
-                contactsPhone: "Mobile:",
-                contactsEmail: "Email:",
-                contactsNote: "For large groups, a phone call in advance is appreciated.",
-                servicesTitle: "Additional Services",
-                servicesParagraph: "Inside the Villa, there is a refreshment point with a pleasant outdoor area, managed by the association",
-                footerText: "&copy; 2025 Davide Brunori. All rights reserved. Created in collaboration with the Garibaldi Museum of Genoa."
-            },
-            // Italian translations
-            it: {
-                metaDescription: "Scopri il Museo Garibaldino di Genova, situato nella storica Villa Spinola a Quarto, quartier generale della Spedizione dei Mille. Orari, biglietti, collezioni e storia.",
-                pageTitle: "Museo Garibaldino di Genova - Il Cuore del Risorgimento a Quarto",
-                headerTitle: "Museo Garibaldino",
-                headerSubtitle: " di Genova",
-                headerDescription: "Nella storica Villa Spinola, dove fu pianificata la Spedizione dei Mille",
-                navHome: "Home",
-                navVilla: "La Villa",
-                navCollections: "Collezioni",
-                navVisit: "Visita",
-                welcomeTitle: "Benvenuti nel Cuore Pulsante del Risorgimento",
-                welcomeImageAlt: "Sala interna del Museo Garibaldino con cimeli e affreschi",
-                welcomeParagraph: "Il Museo Garibaldino di Genova, situato nel quartiere di Quarto, all'interno della magnifica <strong>Villa Spinola</strong> (oggi Villa Garibaldi), fu il vero e proprio quartier generale dove Giuseppe Garibaldi, insieme ai suoi uomini, progettò le fasi cruciali della Spedizione dei Mille. Qui, l'Eroe dei Due Mondi trascorse la notte prima della storica partenza.",
-                villaTitle: "Un Luogo Iconico: Villa Spinola",
-                villaParagraph: "La villa del XVII secolo, di proprietà dell'amico e compagno d'armi <strong>Candido Augusto Vecchi</strong>, fu messa a completa disposizione di Garibaldi. Le sue sale, con splendidi soffitti affrescati, divennero il centro operativo della spedizione. Oggi, il museo occupa due di queste sale, conservando intatta l'atmosfera di quei giorni febbrili. L'edificio è gestito dall'Associazione Nazionale Combattenti e Reduci, che ne preserva la memoria storica.",
-                collectionsTitle: "Le Collezioni: Testimonianze di un'Epoca",
-                collectionsParagraph: "Il percorso espositivo raccoglie un'eredità preziosa del periodo garibaldino e risorgimentale. Esplora alcuni dei nostri pezzi più significativi:",
-                slide1Alt: "Divisa originale di un garibaldino",
-                slide1Caption: "Cimeli e Oggetti Personali: Divise, medaglie e oggetti appartenuti a Garibaldi e ai suoi compagni",
-                slide2Alt: "Lettera manoscritta di Giuseppe Garibaldi",
-                slide2Caption: "Documenti e Manoscritti: Lettere originali e documenti che narrano l'organizzazione dell'impresa",
-                slide3Alt: "Fucili e sciabole usati nella Spedizione dei Mille",
-                slide3Caption: "Armi d'Epoca: Fucili, spade e altre armi che hanno accompagnato i Mille nella loro spedizione",
-                slide4Alt: "Documenti e fotografie storiche del Risorgimento",
-                slide4Caption: "Materiale Storico: Una raccolta di documenti che si estende fino alla Prima Guerra Mondiale",
-                visitTitle: "Organizza la Tua Visita",
-                addressTitle: "Indirizzo",
-                addressLink: "Apri su Google Maps",
-                hoursTitle: "Orari di Apertura",
-                hoursDays: "Lunedì - Giovedì:",
-                hoursClosed: "Venerdì - Domenica:",
-                hoursNote: "Altri giorni e orari su prenotazione.",
-                ticketsTitle: "Biglietti",
-                ticketsFull: "Visita gratuita",
-                ticketsNote: "E' gradito un contributo per la manutenzione del museo.",
-                contactsTitle: "Contatti",
-                contactsPhone: "Cellulare:",
-                contactsEmail: "Email:",
-                contactsNote: "Per gruppi numerosi è gradito il preavviso telefonico.",
-                servicesTitle: "Servizi Aggiuntivi",
-                servicesParagraph: "All'interno della Villa è presente un punto di ristoro con un piacevole dehors, gestito dall'associazione. Vengono spesso organizzati eventi, per informazioni consultare il gruppo facebook.",
-                footerText: "&copy; 2025 Davide Brunori. Tutti i diritti riservati. Realizzato in collaborazione al Museo Garibaldino di Genova."
-            }
-        };
-
-        const setLanguage = (lang) => {
-            // Update all elements with the data-translate-key attribute
-            document.querySelectorAll('[data-translate-key]').forEach(element => {
-                const key = element.getAttribute('data-translate-key');
-                if (translations[lang][key]) {
-                    // Handle special cases like meta tags, alt attributes, and the main title
-                    if (element.tagName === 'META') {
-                        element.setAttribute('content', translations[lang][key]);
-                    } else if (element.tagName === 'IMG') {
-                        element.setAttribute('alt', translations[lang][key]);
-                    } else if (element.tagName === 'TITLE') {
-                        element.textContent = translations[lang][key];
-                    }
-                    else {
-                        // Use innerHTML to support tags like <strong>
-                        element.innerHTML = translations[lang][key];
-                    }
-                }
-            });
-
-            // Update the main <html> lang attribute
-            document.documentElement.lang = lang;
-
-            // Update active class on buttons
-            document.getElementById('lang-it').classList.toggle('active', lang === 'it');
-            document.getElementById('lang-en').classList.toggle('active', lang === 'en');
-            
-            // Save the user's preference in localStorage
-            localStorage.setItem('preferredLanguage', lang);
-        };
-
-        // Add click event listeners to the language buttons
-        document.getElementById('lang-it').addEventListener('click', () => setLanguage('it'));
-        document.getElementById('lang-en').addEventListener('click', () => setLanguage('en'));
-
-        // Set the initial language when the page loads
-        document.addEventListener('DOMContentLoaded', () => {
-            const savedLang = localStorage.getItem('preferredLanguage');
-            const browserLang = navigator.language.split('-')[0];
-        
-            // Cambia la lingua in inglese SOLO se è stata salvata la preferenza 'en'
-            // o se il browser dell'utente è impostato su 'en' e non c'è una preferenza salvata.
-            // Altrimenti, non fare nulla e lascia l'italiano di default.
-            if (savedLang === 'en' || (!savedLang && browserLang === 'en')) {
-                setLanguage('en');
-            }
-        });
-
     </script>
 </body>
 </html>
