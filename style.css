@@ -325,6 +325,10 @@
         }
 
 
+       .hero-image-container {
+             margin-bottom: 2em;
+       }
+
 
         footer {
             background: var(--dark-bg);
