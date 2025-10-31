@@ -1,22 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xhtml="http://www.w3.org/1999/xhtml"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
 
 <url>
   <loc>https://www.museogaribaldino.it/</loc>
-  <lastmod>2025-10-30T16:26:36+00:00</lastmod>
+  <lastmod>2024-05-21T10:00:00+00:00</lastmod>
   <priority>1.00</priority>
+  <xhtml:link 
+                 rel="alternate"
+                 hreflang="it"
+                 href="https://www.museogaribaldino.it/"
+                 />
+  <xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://www.museogaribaldino.it/en/"
+                 />
 </url>
 <url>
   <loc>https://www.museogaribaldino.it/en/</loc>
-  <lastmod>2025-10-30T16:26:36+00:00</lastmod>
+  <lastmod>2024-05-21T10:00:00+00:00</lastmod>
   <priority>0.80</priority>
+  <xhtml:link 
+                 rel="alternate"
+                 hreflang="it"
+                 href="https://www.museogaribaldino.it/"
+                 />
+  <xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://www.museogaribaldino.it/en/"
+                 />
 </url>
 
+<url>
+  <loc>https://www.museogaribaldino.it/spedizione/</loc>
+  <lastmod>2024-05-21T10:00:00+00:00</lastmod>
+  <priority>1.00</priority>
+  <xhtml:link 
+                 rel="alternate"
+                 hreflang="it"
+                 href="https://www.museogaribaldino.it/spedizione/"
+                 />
+  <xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://www.museogaribaldino.it/spedizione/en/"
+                 />
+</url>
+<url>
+  <loc>https://www.museogaribaldino.it/spedizione/en/</loc>
+  <lastmod>2024-05-21T10:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+  <xhtml:link 
+                 rel="alternate"
+                 hreflang="it"
+                 href="https://www.museogaribaldino.it/spedizione/"
+                 />
+  <xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://www.museogaribaldino.it/spedizione/en/"
+                 />
+</url>
+
+<url>
+  <loc>https://www.museogaribaldino.it/garibaldi/</loc>
+  <lastmod>2024-05-21T10:00:00+00:00</lastmod>
+  <priority>1.00</priority>
+  <xhtml:link 
+                 rel="alternate"
+                 hreflang="it"
+                 href="https://www.museogaribaldino.it/garibaldi/"
+                 />
+  <xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://www.museogaribaldino.it/garibaldi/en/"
+                 />
+</url>
+<url>
+  <loc>https://www.museogaribaldino.it/garibaldi/en/</loc>
+  <lastmod>2024-05-21T10:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+  <xhtml:link 
+                 rel="alternate"
+                 hreflang="it"
+                 href="https://www.museogaribaldino.it/garibaldi/"
+                 />
+  <xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://www.museogaribaldino.it/garibaldi/en/"
+                 />
+</url>
 
 </urlset>
