@@ -100,4 +100,36 @@
                  />
 </url>
 
+<url>
+  <loc>https://www.museogaribaldino.it/risorgimento/</loc>
+  <lastmod>2024-05-21T10:00:00+00:00</lastmod>
+  <priority>1.00</priority>
+  <xhtml:link 
+                 rel="alternate"
+                 hreflang="it"
+                 href="https://www.museogaribaldino.it/risorgimento/"
+                 />
+  <xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://www.museogaribaldino.it/risorgimento/en/"
+                 />
+</url>
+<url>
+  <loc>https://www.museogaribaldino.it/risorgimento/en/</loc>
+  <lastmod>2024-05-21T10:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+  <xhtml:link 
+                 rel="alternate"
+                 hreflang="it"
+                 href="https://www.museogaribaldino.it/risorgimento/"
+                 />
+  <xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://www.museogaribaldino.it/risorgimento/en/"
+                 />
+</url>
+
 </urlset>
+
