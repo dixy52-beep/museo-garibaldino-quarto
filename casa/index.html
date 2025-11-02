@@ -3,143 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO: Titolo ottimizzato per le parole chiave -->
-    <title>Casa di Garibaldi a Genova - La Storica Villa delle Ville di Genova</title>
-
-    <!-- SEO: Descrizione che appare nei risultati di ricerca -->
     <meta name="description" content="Cerchi la casa di Giuseppe Garibaldi a Genova? Scopri la storica Villa Spinola a Quarto, una delle più importanti ville di Genova, che fu il suo quartier generale. Oggi è sede del Museo Garibaldino.">
-    
-    <!-- SEO FONDAMENTALE: Indica a Google che la pagina principale è l'altra -->
-    <link rel="canonical" href="https://www.museogaribaldino.it/">
-    
-    <!-- Favicon e icone (percorsi relativi alla cartella superiore) -->
-    <link rel="icon" type="image/png" href="../images/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg" />
-    <link rel="shortcut icon" href="../images/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png" />
+    <title>Casa di Garibaldi a Genova - La Storica Villa delle Ville di Genova</title>
+    <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Museo" />
-    <link rel="manifest" href="../images/site.webmanifest" />
-    
-    <!-- Font del sito principale -->
+    <link rel="manifest" href="/images/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://www.museogaribaldino.it/">
+    <link rel="stylesheet" href="/style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Casa di Garibaldi a Genova: La Storica Villa Spinola",
+      "description": "Scopri la storica Villa Spinola a Quarto, la casa di Giuseppe Garibaldi a Genova durante la preparazione della Spedizione dei Mille. Oggi è sede del Museo Garibaldino.",
+      "image": "/images/villa-spinola.webp",
+      "author": {
+        "@type": "Organization",
+        "name": "Museo Garibaldino di Genova"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Museo Garibaldino di Genova"
+      }
+    }
+    </script>
     
-    <!-- Link al CSS principale del sito (percorso relativo) -->
-    <link rel="stylesheet" href="../style.css">
-
-    <!-- Stili aggiuntivi specifici per questa pagina -->
     <style>
-        /* Stili per la Call to Action Box */
-        .cta-box {
-            background-color: #fdfdfa;
-            padding: 30px 40px;
-            border-radius: 8px;
-            border: 1px solid #e0e0e0;
-            text-align: center;
-            margin: 40px auto;
-            max-width: 650px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        /* Stessi stili inline per garantire coerenza visiva */
+        header {
+            position: relative;
         }
-
-        .cta-box h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            color: #333;
-            margin-top: 0;
-            margin-bottom: 15px;
+        .header-logo {
+            position: absolute;
+            left: 20px;
+            top: 30px;
+            transform: translateY(-50%);
+            height: 50px;
+            z-index: 10;
         }
-
-        .cta-box p {
-            font-size: 1.1rem;
-            color: #555;
-            margin-bottom: 25px;
-        }
-
-        /* Stile per il pulsante principale */
-        .main-button {
-            display: inline-block;
-            background-color: #b32a2a; /* Rosso Garibaldino */
+        .language-switcher {
+            position: absolute;
+            top: 15px;
+            right: 20px;
             color: white;
-            padding: 15px 35px;
-            font-size: 1.2rem;
-            font-weight: 600;
+            z-index: 10;
+        }
+        .language-switcher a, .language-switcher span {
+            color: white;
+            font-size: 1rem;
             font-family: 'Inter', sans-serif;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            border: none;
+            padding: 5px;
+            opacity: 0.7;
+        }
+        .language-switcher a {
             cursor: pointer;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-
-        .main-button:hover {
-            background-color: #9e2525;
-            transform: translateY(-2px);
+        .language-switcher .active {
+            font-weight: bold;
+            text-decoration: underline;
+            opacity: 1;
         }
-
-        /* Piccoli aggiustamenti per il contenuto di questa pagina */
-        #casa-garibaldi h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(2.2rem, 5vw, 3rem);
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333;
+        @media (max-width: 768px) {
+            .header-logo {
+                height: 50px;
+                left: 15px;
+            }
+            .language-switcher {
+                right: 15px;
+            }
+            .header-content h1, .header-content h2 {
+                padding: 0 55px;
+            }
         }
-         #casa-garibaldi p {
-            text-align: center;
-            max-width: 750px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
     </style>
 </head>
 <body>
-    <!-- HEADER: Identico al sito principale per coerenza -->
     <header>
-        <img src="../images/logo-associazione.png" class="header-logo" alt="Logo dell'Associazione Nazionale Combattenti e Reduci">
+        <!-- Stesso logo per mantenere il branding -->
+        <img src="/images/logo-associazione.png" class="header-logo" alt="Logo dell'Associazione Nazionale Combattenti e Reduci">
 
         <div class="language-switcher">
             <span class="active">Italiano</span> |
-            <a href="../en/">English</a>
+            <a href="en/">English</a>
         </div>
         
         <div class="header-content">
-            <!-- Titolo Header diverso, specifico per la ricerca -->
             <h1><span>La Casa di Garibaldi</span><span class="hide-on-mobile"> a Genova</span></h1>
             <h2>Scopri la storica Villa Spinola, oggi Museo Garibaldino</h2>
         </div>
     </header>
 
-    <!-- NAV: Identica al sito principale, con link assoluti alla homepage -->
-    <nav>
-        <div class="nav-container">
-            <a href="https://www.museogaribaldino.it/#benvenuto">Home</a>
-            <a href="https://www.museogaribaldino.it/#storia">La Villa</a>
-            <a href="https://www.museogaribaldino.it/#collezioni">Collezioni</a>
-            <a href="https://www.museogaribaldino.it/#visita">Visita</a>
-        </div>
-    </nav>
-
     <main>
-        <!-- Sezione principale della pagina, focalizzata sull'argomento -->
         <section id="casa-garibaldi">
-            <!-- Immagine rappresentativa -->
-            <img class="hero-image" src="../images/villa.webp" alt="Villa Spinola a Genova, la casa di Garibaldi e sede del Museo Garibaldino">
-
-            <!-- Titolo H1 che include le parole chiave -->
-            <h1>La Vera Casa di Giuseppe Garibaldi a Genova</h1>
-            
+            <h2>La Vera Casa di Giuseppe Garibaldi a Genova</h2>
+            <figure class="hero-image-container">
+                <img 
+                    class="hero-image" 
+                    src="/images/villa-spinola.webp" 
+                    alt="Villa Spinola a Genova, la casa di Garibaldi e sede del Museo Garibaldino"
+                >
+                <figcaption>
+                    Villa Spinola a Genova, la casa di Garibaldi e sede del 
+                    <a href="https://www.museogaribaldino.it" target="_blank" rel="noopener noreferrer">Museo Garibaldino</a>.
+                </figcaption>
+            </figure>
             <p>
                 Stai cercando la <strong>"casa di Garibaldi"</strong> a Genova? L'hai trovata. Si tratta della storica <strong>Villa Spinola</strong> nel quartiere di Quarto, una delle più celebri e importanti <strong>ville a Genova</strong> legate al Risorgimento.
             </p>
             <p>
                 Questa dimora non fu solo un passaggio, ma divenne la vera <strong>casa di Giuseppe Garibaldi</strong> e il suo quartier generale durante la pianificazione della Spedizione dei Mille. Oggi, questo luogo iconico ospita il <strong>Museo Garibaldino ufficiale</strong>.
             </p>
-            
-            <!-- Box con Call to Action (Invito all'azione) -->
+        </section>
+
+        <section class="cta-box-section">
             <div class="cta-box">
                 <h2>Visita il Sito Ufficiale del Museo</h2>
                 <p>
@@ -151,14 +135,36 @@
                 </a>
             </div>
         </section>
+
+        <section id="info">
+            <h2>Rivivi l'Atmosfera: Visita il Museo Garibaldino</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h4>Un Tuffo nella Storia</h4>
+                    <p>
+                        <a href="https://www.museogaribaldino.it" target="_blank" rel="noopener noreferrer">Visita le stanze di Villa Spinola dove Garibaldi pianificò la Spedizione</a>. Cammina dove la storia è stata scritta e senti l'emozione di quei momenti cruciali.
+                    </p>
+                </div>
+                <div class="info-card">
+                    <h4>Cimeli Autentici</h4>
+                    <p>
+                        Il museo custodisce divise, armi, lettere e documenti originali appartenuti ai Mille. Oggetti che raccontano storie di coraggio e sacrificio.
+                    </p>
+                </div>
+                <div class="info-card">
+                    <h4>Organizza la Tua Visita</h4>
+                    <p>
+                        Il museo è a ingresso gratuito e si trova nel luogo esatto da cui partì la spedizione. Un'occasione imperdibile per chiunque voglia comprendere le radici della nostra nazione.
+                        <a href="https://www.museogaribaldino.it/" target="_blank">Scopri di più sul Museo</a>
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <!-- FOOTER: Identico al sito principale per coerenza -->
     <footer>
-        <p>&copy; 2025 Davide Brunori. Tutti i diritti riservati. Realizzato in collaborazione al Museo Garibaldino di Genova.</p>
+        <p>&copy; 2025 Davide Brunori. Tutti i diritti riservati. Pagina informativa realizzata in collaborazione con il Museo Garibaldino di Genova.</p>
     </footer>
 
-    <!-- Script del sito principale, se necessario (in questo caso non serve) -->
-    <!-- <script src="../script.js"></script> -->
 </body>
 </html>
