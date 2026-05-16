@@ -192,8 +192,35 @@
                  href="https://www.museogaribaldino.it/visita/en/"
                  />
 </url>
+<url>
+  <loc>https://www.museogaribaldino.it/villa/en/</loc>
+  <lastmod>2026-05-16T00:38:25+00:00</lastmod>
+  <priority>0.75</priority>
+  <xhtml:link 
+                 rel="alternate"
+                 hreflang="it"
+                 href="https://www.museogaribaldino.it/villa/"
+                 />
+  <xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://www.museogaribaldino.it/villa/en/"
+                 />
+</url>
+<url>
+  <loc>https://www.museogaribaldino.it/villa/</loc>
+  <lastmod>2026-05-16T00:38:25+00:00</lastmod>
+  <priority>0.75</priority>
+  <xhtml:link 
+                 rel="alternate"
+                 hreflang="it"
+                 href="https://www.museogaribaldino.it/villa/"
+                 />
+  <xhtml:link 
+                 rel="alternate"
+                 hreflang="en"
+                 href="https://www.museogaribaldino.it/villa/en/"
+                 />
+</url>
 
 </urlset>
-
-
-
